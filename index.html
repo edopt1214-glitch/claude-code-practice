@@ -328,51 +328,22 @@
       color: var(--white);
     }
 
-    .proof-card > p {
-      margin-bottom: 1.1rem;
+    .proof-card figure {
+      margin: 0;
+    }
+
+    .proof-card img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border: 1px solid rgba(255, 254, 250, 0.25);
+      border-radius: 0.2rem;
+    }
+
+    .proof-card figcaption {
+      margin-top: 0.9rem;
       color: #d0d9ce;
       font-size: 0.9rem;
-    }
-
-    .screenshot-placeholder {
-      display: grid;
-      min-height: 16rem;
-      place-content: center;
-      padding: 1.5rem;
-      border: 1px dashed rgba(255, 254, 250, 0.62);
-      border-radius: 0.2rem;
-      background:
-        linear-gradient(rgba(255, 254, 250, 0.04) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255, 254, 250, 0.04) 1px, transparent 1px);
-      background-size: 2rem 2rem;
-      text-align: center;
-    }
-
-    .placeholder-mark {
-      display: grid;
-      width: 2.6rem;
-      height: 2.6rem;
-      margin: 0 auto 0.8rem;
-      place-items: center;
-      border: 1px solid var(--lime);
-      border-radius: 50%;
-      color: var(--lime);
-      font-family: var(--serif);
-      font-size: 1.5rem;
-    }
-
-    .screenshot-placeholder strong {
-      display: block;
-      font-family: var(--serif);
-      font-size: 1.45rem;
-      font-weight: 400;
-    }
-
-    .screenshot-placeholder span {
-      display: block;
-      margin-top: 0.3rem;
-      color: #d0d9ce;
-      font-size: 0.85rem;
     }
 
     footer {
@@ -594,14 +565,12 @@
       <section class="section" id="proof" aria-labelledby="proof-title">
         <p class="section-label">05 / Proof</p>
         <div class="section-content">
-          <h2 id="proof-title">A pull request, soon</h2>
+          <h2 id="proof-title">A pull request, merged</h2>
           <div class="proof-card">
-            <p>This space is ready for the screenshot of a merged pull request.</p>
-            <div class="screenshot-placeholder" role="img" aria-label="Placeholder for a screenshot of a pull request, to be added in a future pull request">
-              <span class="placeholder-mark" aria-hidden="true">+</span>
-              <strong>Screenshot placeholder</strong>
-              <span>Real pull request screenshot coming in a later PR</span>
-            </div>
+            <figure>
+              <img src="images/merged-pr.png" width="1250" height="465" alt="GitHub pull request page showing two commits from the landing page branch merged into main, with the message: Pull request successfully merged and closed.">
+              <figcaption>My first pull request on GitHub: the landing page branch merged into main.</figcaption>
+            </figure>
           </div>
         </div>
       </section>
